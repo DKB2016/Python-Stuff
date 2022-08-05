@@ -51,3 +51,29 @@ averages.append(92)
 averages.append(85)
 print(averages)
 # the remove() method allows you to remove an item by referencing its value
+
+# Create an empty list and use a for loop to fill it up
+emptySet=[]
+for i in range(11):
+    emptySet.append(i)
+    print(emptySet)
+
+# Sequence types - list, tuple, range
+# a sequence is an ordered collection of items
+# anything you can iterate over is iterable
+# indexing must start at 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
