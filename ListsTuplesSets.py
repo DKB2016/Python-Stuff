@@ -73,14 +73,20 @@ print("")
 for dimension in dimensions:
     print(dimension)
 
-foods = input("What are you five favorite foods: ")
-print(foods)
+# foods = input("What are you five favorite foods: ")
+# print(foods)
 
-for char in foods:
-    print(char)
+# for char in foods:
+#     print(char)
 
-
-
+# checking if the tuple is empty
+tup = (-1,)
+if tup: # if this is true then it executes the for loop, if false then prints the else statement
+     for i in range(101):
+         tup = tup + (i,)
+else:
+    print("This tuple is empty!")
+print(tup)
 
 
 
