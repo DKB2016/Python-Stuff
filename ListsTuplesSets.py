@@ -61,6 +61,33 @@ for i in range(11):
     emptySet.append(i)
     print(emptySet)
 
+# TUPLES
+# Tuples are immutable lists
+# Tuples use parentheses instead of brackets like lists
+# You can access elements in a tuple by their index like lists
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+print("")
+# you can loop through a tuple just like lists
+for dimension in dimensions:
+    print(dimension)
+
+foods = input("What are you five favorite foods: ")
+print(foods)
+
+for char in foods:
+    print(char)
+
+
+
+
+
+
+
+
+
+
 # Sequence types - list, tuple, range
 # a sequence is an ordered collection of items
 # anything you can iterate over is iterable
