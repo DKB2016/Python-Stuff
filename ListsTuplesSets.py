@@ -1,7 +1,10 @@
 #
-# Fun with Lists, Tuples, and Sets
-# dkb2016
-# 7.24.22
+# Created on Fri Aug 05 2022
+# by David J. Clark
+# scarletspeedster1729@protonmail.ch
+# ListsTuplesSets.py
+# Copyright (c) 2022
+#
 
 
 # this is a list, just a 'list' of values
@@ -62,8 +65,6 @@ for i in range(11):
 # a sequence is an ordered collection of items
 # anything you can iterate over is iterable
 # indexing must start at 0
-
-
 
 
 
