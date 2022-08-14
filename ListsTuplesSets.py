@@ -89,9 +89,12 @@ else:
 print(tup)
 
 
+# Dictionaries are a collection of key-value pairs. 
+# Each key is connected to a value and you can access the value associated with each key
+alien_0 = {'color': 'green', 'points': 5}
 
-
-
+alien_1 = {}
+alien_1['color'] = 'Blue'
 
 
 # Sequence types - list, tuple, range
