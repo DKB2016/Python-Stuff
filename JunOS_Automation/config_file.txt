@@ -1,0 +1,8 @@
+
+set vlans server vlan-id 200
+set vlans workstation vlan-id 250
+set vlans printer vlan-id 300
+set protocols igmp interface all
+set protocols pim interface all
+set protocols ldp interface all
+commit
