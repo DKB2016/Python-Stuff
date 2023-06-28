@@ -1,7 +1,7 @@
 # messin' with whitespace and strings
 
 
-name = "David  "
+name = "name  "
 
 print(name)
 print(len(name))

@@ -2,7 +2,7 @@
 switches = [
 {
     'host':'192.168.200.245',
-    'auth_username':'dclark',
+    'auth_username':'username',
     'auth_password':'password',
     'auth_strict_key': False,
     'platform': 'cisco_iosxe',
@@ -10,14 +10,14 @@ switches = [
 },
 {
     'host':'192.168.2.1',
-    'auth_username':'dclark',
+    'auth_username':'username',
     'auth_password':'password',
     'auth_strict_key': False,
     'platform': 'cisco_iosxe'
 },
 {
     'host':'192.168.3.1',
-    'auth_username':'dclark',
+    'auth_username':'username',
     'auth_password':'password',
     'auth_strict_key': False,
     'platform': 'cisco_iosxe'
