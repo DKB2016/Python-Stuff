@@ -1,0 +1,2 @@
+2023-11-21 12:32:12,668 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2023-11-21 12:48:21,945 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts

@@ -1,0 +1,6 @@
+---
+
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "c:\\Users\\david\\OneDrive\\Documents\\GitHub\\Python-Stuff\\nornir\\inventory.yml"

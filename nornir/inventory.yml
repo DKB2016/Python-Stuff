@@ -1,0 +1,7 @@
+---
+
+cisco_switch:
+  hostname: sandbox-iosxe-latest-1.cisco.com
+  username: admin
+  password: C1sco12345
+  platform: ios
