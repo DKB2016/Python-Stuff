@@ -7,7 +7,7 @@ def main():
 
     # Define the task to send a command
     def get_config(task):
-        result = task.run(netmiko_send_command, command_string="show ip route")
+        result = task.run(netmiko_send_command, command_string="show ip interface brief")
         print(f"--- {task.host} ---\n{result.result}")
 
     # Run the task on the device
