@@ -1,0 +1,29 @@
+! Jinja2 template for Cisco Switch Configuration
+!
+hostname {{ hostname }}
+
+! Loop through interfaces and configure them
+{% for interface in interfaces %}
+interface {{ interface.name }}
+  description {{ interface.description }}
+  switchport mode {{ interface.mode }}
+  {% if interface.mode == 'access' %}
+  switchport access vlan {{ interface.access_vlan }}
+  {% elif interface.mode == 'trunk' %}
+  switchport trunk native vlan {{ interface.native_vlan }}
+  switchport trunk allowed vlan {{ interface.allowed_vlans }}
+  {% endif %}
+  {% if interface.shutdown %}
+  shutdown
+  {% else %}
+  no shutdown
+  {% endif %}
+{% endfor %}
+
+! Configure VLANs
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+  name {{ vlan.name }}
+{% endfor %}
+
+! Additional configurations here

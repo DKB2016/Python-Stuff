@@ -1,0 +1,39 @@
+hostname: "Core-switch1"
+
+interfaces:
+  - name: "GigabitEthernet0/1"
+    description: "Server Port"
+    mode: "access"
+    access_vlan: 10
+    shutdown: false
+
+  - name: "GigabitEthernet0/2"
+    description: "Uplink to Router"
+    mode: "trunk"
+    native_vlan: 1
+    allowed_vlans: "10,20,30"
+    shutdown: false
+
+  - name: "GigabitEthernet0/3"
+    description: "Unused Port"
+    mode: "access"
+    access_vlan: 1
+    shutdown: true
+
+vlans:
+  - id: 1
+    name: "default"
+
+  - id: 10
+    name: "Data VLAN"
+
+  - id: 20
+    name: "Voice VLAN"
+
+  - id: 30
+    name: "Guest VLAN"
+  
+  - id: 40
+    name: "Server VLAN"
+
+
