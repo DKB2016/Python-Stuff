@@ -83,3 +83,40 @@ nums.sort()
 print(nums)
 nums.reverse()
 print(nums)
+
+dict = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4
+}
+
+s = "onetwothreefour"
+for k,v in dict.items():
+    if s.endswith(k):
+        dig = str(v)
+    elif s.startswith(k):
+        dig = str(v)
+    
+print(dig)
+
+#list comprehension in python allows you to create a list of numbers from a for loop in a single line
+num = [num**2 for num in range(1, 11)]
+print(num)
+
+
+# tuples are defined with parentheses and can be acccessed with the index notation like with lists
+menu = ("Pizza", "Burger", "Salad", "Sandwich", "Chicken")
+
+for item in menu:
+    print(item)
+
+# this fails as tuples are immutable
+#menu[0] = "Chicken Burger"
+
+menu = ("Pizza", "Burger", "Bread", "Sandwich", "Pasta")
+print(menu)
+print("")
+
+for item in menu:
+    print(item)
