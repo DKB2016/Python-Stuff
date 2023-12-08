@@ -26,3 +26,60 @@ print(state.count("i")) # this will return 4
 print(state.count("i", 1, 5)) # this will return 2
 count = state.count("i", 1, 5)
 print(type(count))
+
+
+quote = """lorem ipsum dolor sit amet, consectetur adip"""
+list =  []
+for char in quote.upper():
+    if char.isupper():
+        list.append(char)
+    elif char.islower():
+        list.append(char)
+    else:
+        None
+print(list)
+
+
+
+dict = {'key1':'value1', 'key2':'value2', 'key3':'value3'}
+for key, value in dict.items():
+    print(f"The key is : {key}, value is : {value}")
+    
+    
+
+# python for loops work differently than other languages, you don't specify a starting and ending value
+# you can do something similar to this with the range() function
+for i in range(1, 20):
+    print(f"i is {i}")
+    print("i is {}".format(i))
+
+s = "hello"
+# accessing a string by positive index starting from 0
+print(s[0])
+print(s[1])
+print(s[2])
+print(s[3])
+print(s[4])
+# accessing a string by negative index starting from -1
+print(s[-1])
+print(s[-2])
+print(s[-3])
+print(s[-4])
+print(s[-5])
+# another way of calculating the negative index is by subtracting the length of the string
+print(s[0 - len(s)], 0-len(s))
+print(s[1 - len(s)], 1 - len(s))
+print(s[2 - len(s)], 2 - len(s))
+print(s[3 - len(s)], 3 - len(s))
+print(s[4 - len(s)], 4 - len(s))
+
+
+nums = [ 3, 5, 4, 2, 1, 0, 9, 10, 8, 7]
+print(sorted(nums)) # the sorted() method temporarily sorts the list in ascending order by default
+# the sort() method permanately sorts the list in ascending order by default
+# you can sort the list in descending order using the reverse() method or sort() method with the reverse parameter set to True
+print(nums)
+nums.sort()
+print(nums)
+nums.reverse()
+print(nums)
